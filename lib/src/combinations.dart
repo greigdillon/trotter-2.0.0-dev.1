@@ -65,7 +65,7 @@ class Combinations<T> extends Combinatorics<T> {
 
 
 class CombinationsNonUnique<T> extends Combinatorics<T> {
-  Combinations(int r, List<T> items) {
+  CombinationsNonUnique(int r, List<T> items) {
     if (r < 0 || r > items.length) {
       throw Exception('Cannot take $r items from ${items.length}.');
     }
