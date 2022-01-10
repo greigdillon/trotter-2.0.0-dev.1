@@ -16,7 +16,7 @@ part of trotter;
 class Compositions<T> extends Combinatorics<T> {
   Compositions(int r, List<T> items) {
     if (r < 0) throw Exception('Cannot take $r items from ${items.length}.');
-    if (!_itemsAreUnique(items)) throw Exception('Items are not unique.');
+    // if (!_itemsAreUnique(items)) throw Exception('Items are not unique.');
 
     _items = List<T>.from(items);
     _r = r;
